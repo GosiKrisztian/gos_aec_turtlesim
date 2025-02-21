@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 from glob import glob
 import os
 
-package_name = 'ros2_py_template'
+package_name = 'gos_aec_turtlesim'
 
 setup(
     name=package_name,
@@ -16,14 +16,14 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='todo',
-    maintainer_email='todo@todo.com',
+    maintainer='GosiKrisztian',
+    maintainer_email='gosikrisz@gmail.com',
     description='TODO: Package description',
     license='GNU General Public License v3.0',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            # 'control_vehicle = ros2_py_template.control_vehicle:main',
+            # 'control_vehicle = gos_aec_turtlesim.control_vehicle:main',
         ],
     },
 )
