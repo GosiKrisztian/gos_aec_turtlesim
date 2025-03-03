@@ -23,7 +23,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            # 'control_vehicle = gos_aec_turtlesim.control_vehicle:main',
+            'rajz = gos_aec_turtlesim.rajz:main',
         ],
     },
 )
