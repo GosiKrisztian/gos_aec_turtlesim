@@ -14,5 +14,11 @@ def generate_launch_description():
                 package='turtlesim',
                 executable='turtlesim_node',
             ),
+            Node(
+                package='gos_aec_turtlesim',
+                executable='publisher',
+                name='publisher',
+                output='screen'
+            ),
         ]
     )

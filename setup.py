@@ -24,6 +24,7 @@ setup(
     entry_points={
         'console_scripts': [
             'rajz = gos_aec_turtlesim.rajz:main',
+            'publisher = gos_aec_turtlesim.publisher:main',
         ],
     },
 )
