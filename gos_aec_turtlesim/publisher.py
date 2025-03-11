@@ -4,7 +4,7 @@ from std_msgs.msg import String
 
 class CarPublisher(Node):
     def __init__(self):
-        super().__init__('snowman_publisher')
+        super().__init__('deathlyhallows_publisher')
         self.publisher_ = self.create_publisher(String, 'topic', 10)
         self.timer = self.create_timer(0.5, self.timer_callback)
 
