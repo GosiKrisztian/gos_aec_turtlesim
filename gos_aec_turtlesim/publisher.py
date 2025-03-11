@@ -10,7 +10,7 @@ class CarPublisher(Node):
 
     def timer_callback(self):
         msg = String()
-        msg.data = 'hóember rajz'
+        msg.data = 'deathly hallows'
         self.publisher_.publish(msg)
         self.get_logger().info(f'Publishing: {msg.data}')
 
