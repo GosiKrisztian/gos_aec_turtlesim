@@ -24,8 +24,8 @@ class DeathlyHallowsDrawer(Node):
 
     def turn_turtle(self, angle):
         twist = Twist()
-        twist.angular.z = 1.0 if angle > 0 else -1.0  # Pozitív vagy negatív irányba fordul
-        target_time = abs(angle) / 1.0  # Ha 1 rad/s a sebesség, akkor ennyi idő kell
+        twist.angular.z = 1.0 if angle > 0 else -1.0  
+        target_time = abs(angle) / 1.0  
         start_time = time.time()
 
         while time.time() - start_time < target_time:
