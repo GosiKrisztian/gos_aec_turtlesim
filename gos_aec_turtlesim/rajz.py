@@ -32,8 +32,7 @@ class DeathlyHallowsDrawer(Node):
             self.publisher_.publish(twist)
             time.sleep(0.1)
 
-        twist.angular.z = 0.0
-        self.publisher_.publish(twist)
+        
 
     def draw_circle(self, radius, speed=1.0):
         circumference = 2 * math.pi * radius
@@ -41,31 +40,26 @@ class DeathlyHallowsDrawer(Node):
         self.move_turtle(speed, speed / radius, duration)
 
     def draw_triangle(self, side_length):
-            self.move_turtle(2.0, 0.0, side_length / 2.0)
-            self.turn_turtle(math.pi * 2 / 3)
-
-            self.move_turtle(2.0, 0.0, side_length / 2.0)
-            self.turn_turtle(math.pi * 2 / 3)
-
+        for _ in range(3):
             self.move_turtle(2.0, 0.0, side_length / 2.0)
             self.turn_turtle(math.pi * 2 / 3)
     
     def draw_vertical_line(self, length):
-        self.turn_turtle(math.pi / 2)  # Vissza függőlegesbe
-        self.move_turtle(2.0, 0.0, length / 2.0)
+        self.turn_turtle(85 * math.pi / 180)  
+        self.move_turtle(1.732, 0.0, length / 2.0)
     
     def draw_deathly_hallows(self):
-        side_length = 4.0  # Háromszög oldalhossza
-        radius = side_length / math.sqrt(3) / 2  # Beírt kör sugara
+        side_length = 4.0  
+        radius = side_length / math.sqrt(3) / 2  
         
-        # Háromszög rajzolása
+        
         self.draw_triangle(side_length)
-
-        # Kör középre igazítva, pontosan illeszkedve
-        self.move_turtle(1.664, 0.0, radius)  # Középre mozdul
+        
+        
+        self.move_turtle(1.610, 0.0, radius)  
         self.draw_circle(radius, speed=1.5)
         
-        # Középső vonal pontosan a közepére
+        
         self.draw_vertical_line(side_length)
         
     def run(self):
@@ -82,3 +76,4 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+
