@@ -2,6 +2,7 @@
 ROS 2 python package.  [![Static Badge](https://img.shields.io/badge/ROS_2-Humble-34aec5)](https://docs.ros.org/en/humble/)
 
 A package egy node-ból áll, ez a turtlesim szimulátorban képes egy 'Deathly Hallows' szimbólum kirajzolására.
+A hirdetett topic geometry_msgs/twist típusú.
 Megvalósítás ROS2 Humble alatt.
 
 ## Packages and build
