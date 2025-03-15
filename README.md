@@ -3,6 +3,8 @@ ROS 2 python package.  [![Static Badge](https://img.shields.io/badge/ROS_2-Humbl
 ## Packages and build
 
 It is assumed that the workspace is `~/ros2_ws/`.
+A package egy node-ból áll, ez a turtlesim szimulátorban képes egy 'Deathly Hallows' szimbólum kirajzolására.
+Megvalósítás ROS2 Humble alatt.
 
 ### Clone the packages
 ``` r
@@ -31,3 +33,6 @@ source ~/ros2_ws/install/setup.bash
 ``` r
 ros2 launch gos_aec_turtlesim launch_example1.launch.py
 ```
+
+![deathly_hallows_turtlesim2](img/deathly_hallows_turtlesim2.png)
+
