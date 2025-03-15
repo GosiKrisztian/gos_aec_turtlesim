@@ -23,7 +23,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'rajz = gos_aec_turtlesim.rajz:main',
+            'deathly_hallows = gos_aec_turtlesim.deathly_hallows:main',
             'publisher = gos_aec_turtlesim.publisher:main',
         ],
     },

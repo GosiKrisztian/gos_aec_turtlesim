@@ -7,7 +7,7 @@ def generate_launch_description():
         [
             Node(
                 package='gos_aec_turtlesim',
-                executable='rajz',
+                executable='deathly_hallows',
                 output='screen'
             ),
             Node(
